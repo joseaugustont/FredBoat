@@ -86,3 +86,13 @@ processResources {
             "env.BUILD_NUMBER"  : (System.getenv('CI') ? System.getenv('BUILD_NUMBER') : 'DEV')
     ]
 }
+
+repositories {
+    maven {
+        url "http://www.evosuite.org/m2"
+    }
+}
+
+dependencies {
+    testCompile 'org.evosuite:evosuite-standalone-runtime:1.0.1'
+}

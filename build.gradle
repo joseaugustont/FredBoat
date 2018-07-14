@@ -4,6 +4,7 @@ allprojects {
         jcenter()                          // JDA and some other stuff
         mavenLocal()                       // useful for developing
         maven { url "https://jitpack.io" } // build projects directly from github
+        maven { url "http://www.evosuite.org/m2" }
     }
 
     apply plugin: 'idea'
